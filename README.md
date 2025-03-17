@@ -1,19 +1,32 @@
 # kibanaSearchLogger
 
-A Kibana plugin
+Плагин для сбора ui метрик Kibana
 
 ---
 
-## Development
+## Разработка
 
-See the [kibana contributing guide](https://github.com/elastic/kibana/blob/main/CONTRIBUTING.md) for instructions setting up your development environment.
+См. [руководство по разработке Kibana](https://github.com/elastic/kibana/blob/main/CONTRIBUTING.md) для настройки среды разработки.
 
-## Scripts
+## Скрипты
 
 <dl>
   <dt><code>yarn kbn bootstrap</code></dt>
-  <dd>Execute this to install node_modules and setup the dependencies in your plugin and in Kibana</dd>
+  <dd>Устанавливает зависимости (node_modules) и настраивает их в плагине и в Kibana</dd>
 
   <dt><code>yarn plugin-helpers build</code></dt>
-  <dd>Execute this to create a distributable version of this plugin that can be installed in Kibana</dd>
+  <dd>Создаёт дистрибутивную версию плагина для установки в Kibana</dd>
 </dl>
+
+## Установка и запуск
+
+Для запуска плагина:  
+
+- **Клонируйте репозиторий Kibana**  
+- **Скопируйте файлы плагина** в папку `plugins`  
+- **Установите зависимости**:  
+  ```sh
+  yarn kbn bootstrap
+- **Запустить** снапшот кибаны конкретной версии можно командой `yarn es snapshot --license trial --version <version>`
+- **Авторизуйтесь**: логин `elastic` пароль `changeme`
+- **Сбилдить** плагин можно командой `yarn build` с указанием версии
