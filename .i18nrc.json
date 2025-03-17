@@ -1,0 +1,7 @@
+{
+  "prefix": "kibanaSearchLogger",
+  "paths": {
+    "kibanaSearchLogger": "."
+  },
+  "translations": ["translations/ja-JP.json"]
+}

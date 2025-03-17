@@ -1,0 +1,15 @@
+{
+  "id": "kibanaSearchLogger",
+  "version": "1.0.0",
+  "kibanaVersion": "kibana",
+  "owner": {
+    "name": "zaidler",
+    "githubTeam": ""
+  },
+  "description": "",
+  "server": true,
+  "ui": true,
+  "requiredPlugins": ["navigation"],
+  "optionalPlugins": [],
+  "configPath": ["kibana_search_logger"]
+}
